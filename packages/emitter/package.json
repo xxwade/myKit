@@ -1,6 +1,6 @@
 {
   "name": "lucky-emitter",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "A tiny (less than 1k) event emitter library",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/scottcorgan/tiny-emitter.git"
+    "url": "https://github.com/xxwade/lucky-emitter.git"
   },
   "keywords": [
     "event",
@@ -23,10 +23,10 @@
     "events",
     "bind"
   ],
-  "author": "Scott Corgan",
+  "author": "xxwade",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/scottcorgan/tiny-emitter/issues"
+    "url": "https://github.com/xxwade/myKit/issues"
   },
   "devDependencies": {
     "@tap-format/spec": "0.2.0",
