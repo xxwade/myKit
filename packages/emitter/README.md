@@ -7,7 +7,7 @@ A tiny (less than 1k) event emitter library.
 ### npm
 
 ```
-npm install tiny-emitter --save
+npm install lucky-emitter --save
 ```
 
 ## Usage
