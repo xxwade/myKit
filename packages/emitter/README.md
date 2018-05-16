@@ -1,4 +1,4 @@
-# tiny-emitter
+# lucky-emitter
 
 A tiny (less than 1k) event emitter library.
 
@@ -13,7 +13,7 @@ npm install lucky-emitter --save
 ## Usage
 
 ```js
-var Emitter = require('tiny-emitter');
+var Emitter = require('lucky-emitter');
 var emitter = new Emitter();
 
 emitter.on('some-event', function (arg1, arg2, arg3) {
@@ -23,10 +23,10 @@ emitter.on('some-event', function (arg1, arg2, arg3) {
 emitter.emit('some-event', 'arg1 value', 'arg2 value', 'arg3 value');
 ```
 
-Alternatively, you can skip the initialization step by requiring `tiny-emitter/instance` instead. This pulls in an already initialized emitter.
+Alternatively, you can skip the initialization step by requiring `lucky-emitter/instance` instead. This pulls in an already initialized emitter.
 
 ```js
-var emitter = require('tiny-emitter/instance');
+var emitter = require('lucky-emitter/instance');
 
 emitter.on('some-event', function (arg1, arg2, arg3) {
  //
@@ -82,7 +82,3 @@ Test
 npm install
 npm test
 ```
-
-## License
-
-[MIT](https://github.com/scottcorgan/tiny-emitter/blob/master/LICENSE)
