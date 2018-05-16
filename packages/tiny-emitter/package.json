@@ -1,6 +1,6 @@
 {
-  "name": "xxwade@emitter",
-  "version": "0.1.1",
+  "name": "@myKit/emitter",
+  "version": "0.1.2",
   "description": "A tiny (less than 1k) event emitter library",
   "main": "index.js",
   "scripts": {
