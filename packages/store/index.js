@@ -1,10 +1,6 @@
 /**
  * Created by xuxin on 2018/5/16.
  */
-/**
- * Created by xuxin on 2018/4/26.
- */
-
 // 1m缓存系统 实现缓存淘汰
 class Store {
   constructor() {
@@ -24,7 +20,6 @@ class Store {
     }
     let size = this.sizeOf(JSON.stringify(value))
     if (this.store.maxSize < size + this.store.size) {
-      console.log('超了-----------');
       var keys = Object.keys(this.store);
       // 时间排序
       keys = keys.sort((a, b) => {
