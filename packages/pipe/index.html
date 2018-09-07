@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>pipe test</title>
+</head>
+
+<body>
+
+  <script type="module">
+    import pipe from './index.js'
+
+    function getVAl() {
+      return new Promise((resolve, rejcet) => {
+        setTimeout(() => {
+          resolve(10)
+        })
+      })
+    }
+    const add = (x, y) => x + y;
+    const square = x => x * x;
+    const divide = (x, y) => x / y;
+    const double = x => x + x;
+    const asyncFn = async (x) => {
+      const val = await getVAl()
+      return x + val
+    }
+
+
+    // const result = pipe(1)
+    // .pipe(add, 1)
+    // .pipe(double)
+    // .pipe(square)
+    // .pipe(divide, 8)
+    // .pipe(asyncFn)
+    // .pipe(add, 10); // 22
+
+    (async () => {
+      let result = await pipe(1).pipe(asyncFn)
+
+      // result = await result.pipe(asyncFn)
+
+      window.result = result
+      console.log(window.result)
+    })()
+
+
+  </script>
+</body>
+
+</html>
